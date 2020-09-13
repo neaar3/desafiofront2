@@ -1,0 +1,98 @@
+* {
+  box-sizing: content-box;
+}
+.header {
+  background-color: #0f1c26;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5em;
+}
+body {
+  background-color: #1d2226;
+  margin: 0;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+.usuario {
+  display: flex;
+  align-items: center;
+}
+.usuario img {
+  padding-left: 10px;
+  width: 56px;
+  height: 56px;
+}
+.search input {
+  all: unset;
+  background: #171b1e;
+  min-height: 2.5em;
+  width: 25vw;
+  color: white;
+}
+button {
+  margin-right: 0.75em;
+  background: #1d2226;
+  color: #676767;
+  border: 2px solid #676767;
+  height: 2em;
+  width: 8.25em;
+  font-size: 1.2em;
+  outline: inherit;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 6px;
+}
+.discount,
+.favorite {
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.bag-content {
+  text-align: center;
+}
+.bag-bottom {
+  background: #171b1e;
+}
+.bag-header {
+  font-size: 1.25em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: #a785ed;
+  padding: 0.5em 0em;
+  justify-content: center;
+}
+.right-content {
+  margin-top: 2.5em;
+}
+.title {
+  padding-top: 1em;
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.bag-fotter {
+  font-size: 0.75em;
+}
+.bag-fotter,
+.bag-fotter-input {
+  margin-left: 0.5em;
+  padding-bottom: 1em;
+}
+.bag-fotter-input input {
+  all: unset;
+  background: #0b1217;
+  min-height: 2.5em;
+  width: 15vw;
+  color: white;
+}
+.bag {
+  position: sticky;
+}
