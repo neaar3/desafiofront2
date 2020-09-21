@@ -245,6 +245,7 @@ fetchJson(
 
         const bagConfirmar = document.createElement("button");
         bagConfirmar.classList.add("bag-confirmar");
+        bagConfirmar.setAttribute("form", "form-page");
         bagConfirmarDiv.append(bagConfirmar);
 
         const bagConfirmarTexto = document.createElement("div");
@@ -426,6 +427,7 @@ fetchJson(
 
           const bagConfirmar = document.createElement("button");
           bagConfirmar.classList.add("bag-confirmar");
+          bagConfirmar.setAttribute("form", "form-page");
           bagConfirmarDiv.append(bagConfirmar);
 
           const bagConfirmarTexto = document.createElement("div");
@@ -752,6 +754,7 @@ function filmesGenero() {
 
           const bagConfirmar = document.createElement("button");
           bagConfirmar.classList.add("bag-confirmar");
+          bagConfirmar.setAttribute("form", "form-page");
           bagConfirmarDiv.append(bagConfirmar);
 
           const bagConfirmarTexto = document.createElement("div");
@@ -944,6 +947,7 @@ function filmesGenero() {
 
             const bagConfirmar = document.createElement("button");
             bagConfirmar.classList.add("bag-confirmar");
+            bagConfirmar.setAttribute("form", "form-page");
             bagConfirmarDiv.append(bagConfirmar);
 
             const bagConfirmarTexto = document.createElement("div");

@@ -159,7 +159,7 @@ a {
 .filme-qtd-span {
   margin: 0.5em;
 }
-.bag-confirmar {
+.bag-confirmar:enabled {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -171,7 +171,21 @@ a {
   outline: inherit;
   box-sizing: border-box;
 }
-.bag-confirmar:hover {
+
+.bag-confirmar:disabled {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0deg, #898989, #898989);
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: inherit;
+  box-sizing: border-box;
+}
+
+.bag-confirmar:hover:enabled {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -231,6 +245,43 @@ a {
   padding: 1em;
   margin-right: 2em;
   background: #0b1217;
+  border: 1px solid #0b1217;
+  min-width: 20vw;
+  margin-bottom: 1em;
+}
+.info-iniciais input:focus:invalid,
+.info-endereco input:focus:invalid,
+.info-pagamento input:focus:invalid {
+  all: unset;
+  color: white;
+  padding: 1em;
+  margin-right: 2em;
+  background: #0b1217;
+  border: 1px solid #eb5757;
+  min-width: 20vw;
+  margin-bottom: 1em;
+}
+.info-iniciais input:focus,
+.info-endereco input:focus,
+.info-pagamento input:focus {
+  all: unset;
+  color: white;
+  padding: 1em;
+  margin-right: 2em;
+  background: #0b1217;
+  border: 1px solid #fdfdfd;
+  min-width: 20vw;
+  margin-bottom: 1em;
+}
+.info-iniciais input:hover,
+.info-endereco input:hover,
+.info-pagamento input:hover {
+  all: unset;
+  color: white;
+  padding: 1em;
+  margin-right: 2em;
+  background: #0b1217;
+  border: 1px solid #8c8c8c;
   min-width: 20vw;
   margin-bottom: 1em;
 }
