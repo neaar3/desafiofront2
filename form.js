@@ -21,15 +21,17 @@ let spanCabecalho = document.querySelector(".bag-header span");
 imgCabecalho.remove();
 spanCabecalho.innerText = "Resumo dos pedidos";
 newCabecalho.style.backgroundColor = "#171b1e";
-
+let novoVerificador = 0;
 document.querySelector(".bag-confirmar-texto").innerText = "Comprar agora";
 document.querySelector(".bag-confirmar-texto").addEventListener("click", () => {
   let inputs = document.querySelectorAll(".bloco input");
   for (let i = 0; i < inputs.length; i++) {
     if (inputs[i].value.length == 0) {
+      console.log("entrei aqui");
       alert("Por favor, preencha todos os campos.");
       break;
     } else {
+      console.log("entrei aqui");
       window.location.replace("./success.html");
       break;
     }

@@ -51,6 +51,17 @@ body {
   padding-left: 0.5em;
 }
 
+.items-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+.items-header div {
+  margin-left: 8em;
+}
+.box1 {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -118,7 +129,7 @@ a {
   color: white;
   min-width: 15vw;
 }
-.bag .bag-2 {
+.bag {
   position: sticky;
   top: 2.5em;
 }
