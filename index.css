@@ -17,15 +17,12 @@ body {
   margin: 0;
   color: white;
   font-family: "Manrope", sans-serif;
+  min-width: 1024px;
 }
 .usuario {
   display: flex;
   align-items: center;
-}
-.usuario img {
-  padding-left: 10px;
-  width: 56px;
-  height: 56px;
+  padding-right: 5em;
 }
 .search {
   display: flex;
@@ -36,33 +33,117 @@ body {
 }
 .search-box {
   display: flex;
-  height: 40px;
+  min-height: 40px;
   background: #171b1e;
+}
+.items-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+.items-header div {
+  margin-left: 8em;
+}
+.box1 {
+  display: flex;
 }
 .search-box img {
   align-self: center;
   background: #171b1e;
-  height: 2.5em auto;
+  min-height: 2.5em auto;
   padding-right: 1em;
 }
 .search-box input {
   all: unset;
   background: #171b1e;
   min-height: 2.5em;
-  width: 20vw;
+  min-width: 20vw;
   color: white;
   align-self: center;
   padding-left: 0.5em;
 }
 
+.promo {
+  position: relative;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  background-color: #ee82d0;
+  max-height: 120px;
+  max-width: 97%;
+  color: #0f0915;
+}
+.promo .texto {
+  padding: 1.15rem;
+  position: absolute;
+  font-size: 2.5em;
+  font-family: "Quantico", sans-serif;
+}
+
+.promo .texto2 {
+  padding: 1.15rem;
+  position: absolute;
+  font-size: 1.1rem;
+  font-family: "Quantico", sans-serif;
+  top: 2.45em;
+  left: 3rem;
+}
+.promo .texto3 {
+  padding: 1.15rem;
+  position: absolute;
+  font-size: 1.6rem;
+  left: 25rem;
+  top: 0.4rem;
+  font-family: "Quantico", sans-serif;
+}
+.promo p {
+  padding: 1.15rem;
+  position: absolute;
+  font-size: 1.1rem;
+  left: 27.9rem;
+  top: 2.55rem;
+  font-family: "Quantico", sans-serif;
+}
+.item2 {
+  position: absolute;
+  bottom: 0.1em;
+  left: 0.6em;
+}
+.item1 {
+  position: absolute;
+  bottom: 1.15em;
+  left: 1.55em;
+}
+.item4 {
+  position: absolute;
+  bottom: 0.78rem;
+  left: 26.2rem;
+}
+.item3 {
+  position: absolute;
+  bottom: 1.25em;
+  left: 26.75em;
+}
+.imagem1 {
+  position: relative;
+}
+.imagem2 {
+  position: absolute;
+  left: 69%;
+  bottom: 0.01em;
+}
+
 .filme {
-  margin-right: 1.27em;
-  height: 20em;
-  width: 10.5em;
-  border: 2px solid #676767;
+  margin-right: 2em;
+  min-height: 20em;
+  min-width: 11.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: 11.5em 20em;
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 .filme-topo {
   padding-left: 0.75em;
@@ -70,9 +151,13 @@ body {
 }
 .filme-rodape-classe {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
   margin: 0em 0.5em;
+}
+.filme-rodape-classe div {
+  color: #fbcd6e;
 }
 .nota {
   color: #fbcd6e;
@@ -85,8 +170,9 @@ body {
   margin: 0.5em;
   outline: inherit;
   height: 2em;
-  width: 10.5em;
+  min-width: 11.5em;
   align-items: center;
+  color: white;
 }
 .filme-rodape-add:hover {
   background: linear-gradient(
@@ -96,26 +182,53 @@ body {
     ),
     #a785ed;
 }
-.container {
+.container-1,
+.container-2 {
   display: flex;
   flex-direction: row;
-}
-.generos {
-  margin-bottom: 1.5em;
+  flex-wrap: wrap;
+  max-width: 68em;
 }
 .generos button {
-  margin-right: 0.75em;
-  background: #1d2226;
-  color: #676767;
-  border: 2px solid #676767;
-  height: 2em;
-  width: 8.25em;
+  margin-right: 1.35em;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  opacity: 0.2;
+  margin-bottom: 10px;
+  min-height: 2em;
+  min-width: 8.9em;
   font-size: 1.2em;
   outline: inherit;
 }
 .generos button:hover {
   color: #e183c8;
   border: 2px solid #e183c8;
+  background: transparent;
+  opacity: 1;
+}
+.generos button:active {
+  border: 2px solid #a785ed;
+  color: #a785ed;
+  background: transparent;
+  opacity: 1;
+}
+.generos .marcado {
+  border: 2px solid #e183c8;
+  color: #e183c8;
+  opacity: 1;
+  background: rgba(225, 131, 200, 0.2);
+}
+.generosClique {
+  margin-right: 1.35em;
+  background: rgba(225, 131, 200, 0.2);
+  border: 2px solid #e183c8;
+  color: #e183c8;
+
+  min-height: 2em;
+  min-width: 8.9em;
+  font-size: 1.2em;
+  outline: inherit;
 }
 a {
   text-decoration: none;
@@ -129,7 +242,9 @@ a {
 }
 .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .bag-content {
   text-align: center;
@@ -148,7 +263,7 @@ a {
   justify-content: center;
 }
 .right-content {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 .title {
   padding-top: 1em;
@@ -159,20 +274,20 @@ a {
 .subtitle {
   font-size: 1rem;
 }
-.bag-fotter {
+.bag-footer {
   font-size: 0.75em;
   margin-left: 1rem;
 }
-.bag-fotter-input {
+.bag-footer-input {
   display: flex;
   justify-content: space-between;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   margin: 0em 1em 1em 1em;
   background: #0b1217;
-  min-width: 15vw;
+  min-width: 10vw;
 }
 
-.bag-fotter-input input {
+.bag-footer-input input {
   all: unset;
   color: white;
   min-width: 15vw;
@@ -180,4 +295,64 @@ a {
 .bag {
   position: sticky;
   top: 2.5em;
+}
+.bag-content-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filme-icon img {
+  max-width: 4em;
+  max-height: 5em;
+  margin: 1em;
+}
+.filme-bag {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+.filme-info-preco {
+  margin-top: 0.5em;
+}
+.filme-qtd {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.filme-qtd-span {
+  margin: 0.5em;
+}
+.bag-confirmar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e25ebf;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: inherit;
+  box-sizing: border-box;
+}
+.bag-confirmar:hover {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(225, 123, 123, 0.45),
+      rgba(225, 123, 123, 0.45)
+    ),
+    #ffb6eb;
+  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: inherit;
+  box-sizing: border-box;
+}
+.bag-confirmar-div {
+  padding: 0em 1em 1em 1em;
 }

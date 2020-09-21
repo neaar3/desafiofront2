@@ -1,0 +1,238 @@
+* {
+  box-sizing: content-box;
+}
+.header ::placeholder {
+  color: #fdfdfd;
+  padding-left: 0.75em;
+}
+.header {
+  background-color: #0f1c26;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 6.5em;
+}
+body {
+  background-color: #1d2226;
+  margin: 0;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  min-width: 1024px;
+}
+.usuario {
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search > img {
+  margin-right: 3em;
+}
+.search-box {
+  display: flex;
+  min-height: 40px;
+  background: #171b1e;
+}
+.search-box img {
+  align-self: center;
+  background: #171b1e;
+  min-height: 2.5em auto;
+  padding-right: 1em;
+}
+.search-box input {
+  all: unset;
+  background: #171b1e;
+  min-height: 2.5em;
+  min-width: 20vw;
+  color: white;
+  align-self: center;
+  padding-left: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 6px;
+}
+.discount,
+.favorite {
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-image: url(./imgs/Social_Media.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 25%;
+  background-position-x: -7em;
+}
+.bag-content {
+  text-align: center;
+}
+.bag-bottom {
+  background: #171b1e;
+  padding-bottom: 0.35em;
+}
+.bag-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: #a785ed;
+  padding: 0.75em 0em;
+  justify-content: center;
+}
+.right-content {
+  margin-top: 2em;
+}
+.title {
+  padding-top: 1em;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 1rem;
+}
+.bag-footer {
+  font-size: 0.75em;
+  margin-left: 1rem;
+}
+.bag-footer-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0em 1em 1em 1em;
+  background: #0b1217;
+  min-width: 10vw;
+}
+
+.bag-footer-input input {
+  all: unset;
+  color: white;
+  min-width: 15vw;
+}
+.bag .bag-2 {
+  position: sticky;
+  top: 2.5em;
+}
+.bag-content-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filme-icon img {
+  max-width: 4em;
+  max-height: 5em;
+  margin: 1em;
+}
+.filme-bag {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+.filme-info-preco {
+  margin-top: 0.5em;
+}
+.filme-qtd {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+}
+.filme-qtd-span {
+  margin: 0.5em;
+}
+.bag-confirmar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e25ebf;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: inherit;
+  box-sizing: border-box;
+}
+.bag-confirmar:hover {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(225, 123, 123, 0.45),
+      rgba(225, 123, 123, 0.45)
+    ),
+    #ffb6eb;
+  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: inherit;
+  box-sizing: border-box;
+}
+.bag-confirmar-div {
+  padding: 0em 1em 1em 1em;
+}
+
+/* pagina form */
+.bloco {
+  display: flex;
+  margin-top: 1.5em;
+}
+.info-iniciais,
+.info-endereco {
+  background: #171b1e;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  padding: 1em 0em 1.5em 2em;
+}
+.info-pagamento {
+  background: #171b1e;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  margin-right: 3em;
+  padding: 1em 0em 3em 2em;
+}
+.info-iniciais-div,
+.info-endereco-div,
+.info-pagamento-div {
+  display: flex;
+  flex-direction: column;
+}
+.info-iniciais input,
+.info-endereco input,
+.info-pagamento input {
+  all: unset;
+  color: white;
+  padding: 1em;
+  margin-right: 2em;
+  background: #0b1217;
+  min-width: 20vw;
+  margin-bottom: 1em;
+}
+.info-iniciais p,
+.info-endereco p,
+.info-pagamento p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 1em 1em;
+}
